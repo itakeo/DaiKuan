@@ -39,6 +39,10 @@ export default class User extends Component {
         }
     }
     showGZH=()=>{
+        let _dom = this.refs.text;
+        _dom.select();
+        _dom.setSelectionRange(0, _dom.value.length);
+        document.execCommand("copy");
         this.setState({
             showGzhDialog : 1
         })
@@ -62,6 +66,7 @@ export default class User extends Component {
     render () {
         return (
             <View className='wrap'>
+                <textarea readonly="" ref="text" style="position: fixed;left:-9999px; top:-9999px;">{this.state.formInfo.wechat}</textarea>
                 <div className={(this.state.isLogin ? 'show' : '')+" loginDialog"}>
                     <div className="loginDialogCon">
                         <h1>您还未登录，请登录</h1>
