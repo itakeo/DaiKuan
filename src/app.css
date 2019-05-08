@@ -26,7 +26,12 @@ body { font-size: 13px }
 .homeBanner{height: auto}
 .swiper-pagination-bullet-active { background: #fff }
 .homeTabIcon { background: #fff; padding: .35rem .1rem .25rem 0.1rem; border-bottom: 1px solid #E6E6E6 }
-.homeTabIcon .tabicons { text-align: center }
+.homeTabIcon .tabicons { text-align: center;position: relative; }
+.homeTabIcon .tabicons:after{
+	content: '';display: block;
+	width: 100%;height: 100%; z-index: 10;position: absolute;
+	left: 0;top: 0;
+}
 .homeTabIcon .tabicons:active { opacity: 0.6 }
 .homeTabIcon .tabicons p { font-size: .25rem; padding-top: .15rem }
 .homeTabIcon .tabicons img {display: block;margin: 0 auto; width: 1rem; height: 1rem }
@@ -176,6 +181,7 @@ content: '';display: block;
 width: 100%;height: 100%;
 position: absolute; left: 0;top: 0
 }
+.loginImg{height: 3.93rem;width: 100%;}
 .shareDialog,
 .copyWxDialig,
 .aboutDialog { position: fixed; left: 0; top: 0; width: 100%; height: 100%; transition: all .4s ease; -webkit-transition: all .4s ease; z-index: 1400; background: rgba(0, 0, 0, .7); opacity: 0; visibility: hidden }

@@ -95,7 +95,7 @@ const config = {
       port: 888,
       proxy: {
         '/api_v1': {
-          target: 'http://www.gemecc.com/',
+          target: 'http://47.103.48.255/',
           //pathRewrite: {'^/api_v1' : ''},
           changeOrigin: true,     // target是域名的话，需要这个参数，
           secure: false,          // 设置支持https协议的代理

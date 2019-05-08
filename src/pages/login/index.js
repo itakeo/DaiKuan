@@ -122,7 +122,7 @@ export default class Login extends Component {
                 <div className="navBar">
                     登录
                 </div>
-                <img src={require("../../images/zhuce_banner.png")} width="100%" alt=""/>
+                <img src={require("../../images/zhuce_banner.png")} width="100%" className="loginImg" alt=""/>
                 <div class="loginBox">
                     <div flex class="inpBox" >
                        <label>手机号</label> 
@@ -134,7 +134,7 @@ export default class Login extends Component {
                        <span id="getCode" onClick={this.getCode}>{this.state.times}</span>
                     </div>
                     <button class="loginBtn" onClick={this.loginFn}>登陆</button>
-                    <p class="loginTip">登录即同意XXX的 <a href="#">《服务协议》</a></p>
+                    <p class="loginTip">登录即同意贷款牛的 <a href="#">《用户协议与隐私条款》</a></p>
                 </div>
             </View>
         )

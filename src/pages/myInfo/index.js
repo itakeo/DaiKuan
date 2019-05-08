@@ -75,7 +75,7 @@ export default class MyInfo extends Component {
                         <img src={this.state.userInfo.avatar_image} />
                     </div>
                 </a>
-                <div className="user_cell rec">
+                <div className="user_cell">
                     昵称
                     <span>{this.state.userInfo.nickname}</span>
                 </div>

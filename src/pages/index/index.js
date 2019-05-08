@@ -130,7 +130,7 @@ export default class Index extends Component {
                     {
                         this.state.LoanListArr.map(res=>{
                             return (
-                                <a href="javascript:;" box="1"  key={res.id} className="tabicons">
+                                <a href="javascript:;" box="1" data-id={res.id}  data-url={res.url}  onClick={this.applyLoanFn}   key={res.id} className="tabicons">
                                     <img src={res.image} alt=""/>
                                     <p>{res.title}</p>
                                 </a>
