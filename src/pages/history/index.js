@@ -20,7 +20,8 @@ export default class History extends Component {
         }).then(res=>{
             if(res.status==1) {
                 this.setState({
-                    listArr : res.data || []
+                    listArr : res.data || [],
+                    noData : 0
                 })
             }else if(res.status==0){
                 this.setState({

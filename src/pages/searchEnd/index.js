@@ -25,7 +25,8 @@ export default class SearchEnd extends Component {
             console.log('dataArr', res)
             if(res.status==1) {
                 this.setState({
-                    dataArr : res.data || []
+                    dataArr : res.data || [],
+                    noData : 0
                 })
             }else if(res.status==0){
                 this.setState({

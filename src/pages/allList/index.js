@@ -37,10 +37,12 @@ export default class AllList extends Component {
             pagenum : 1,
             pagesize : 999
         }).then(res=>{
-            console.log('dataArr', res)
+            
             if(res.status==1) {
+                console.log('dataArr', res)
                 this.setState({
-                    dataArr : res.data || []
+                    dataArr : res.data || [],
+                    noData : 0
                 })
             }else if(res.status==0){
                 this.setState({
